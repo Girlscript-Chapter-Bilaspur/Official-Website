@@ -1,0 +1,505 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+
+
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: orangered;
+}
+
+section::before
+{
+
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: black;
+}
+
+section .container
+{
+       position: relative;
+    min-width: 100%;
+    min-height: 550px;
+ 
+    z-index: 1000;
+
+
+}
+section .container-fluid
+{
+       position: relative;
+    min-width: 100%;
+    min-height: 550px;
+ 
+    z-index: 1000;
+
+
+}
+
+section .container .contactinformation
+{
+    position: relative;
+    top:    9%;
+    width: 350px;
+   background: orangered;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    box-shadow:0 20px 20px rgba(0, 0 , 0 , 0.2);
+
+
+}
+
+section .container .contactinformation h2
+
+{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-decoration: uderline;
+    text-underline-position: under;
+
+}
+
+section  .container  .contactinformation .info
+
+{
+
+    position: relative;
+    margin: 60px 0;
+    
+
+}
+
+section  .container  .contactinformation .info li
+{
+
+    position: relative;
+    list-style: none;
+    display:flex ;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items:flex-start ;
+
+}
+
+section  .container  .contactinformation .info li fa
+    
+{
+
+
+        
+            max-width: 100%;
+            /*filter: invert(1);*/
+            opacity: 0.5;
+            color: black;
+           
+		   padding: 10%;
+		   background-color: none;
+		   border-radius: 70%;
+		   margin: 5%;
+		   cursor: pointer;
+		   border: 3px solid black;
+		   /*color: rgb(190,190,190);*/
+
+
+}
+
+section  .container  .contactinformation .info li  span 
+
+{
+    width: 50px;
+    min-width:60px;
+    color:white;
+    font-size:50;
+    
+}
+
+section  .container  .contactinformation .info li i
+{
+
+        font-size: 25px; 
+
+}
+
+section  .container  .contactinformation  .abc
+{
+
+
+
+        position: relative;
+        display: flex;
+}
+    
+section  .container  .contactinformation  .abc li
+    
+{
+
+        list-style: none;
+        margin-right: 15px;
+        
+}
+section  .container  .contactinformation  .abc li a 
+{
+
+        text-decoration: none;
+        
+}
+section  .container  .contactinformation  .abc li a i
+{
+      /* filter: invert(1);*/
+        opacity: 1; 
+        color: black;
+        font-size: 50px;
+        box-shadow: 0 70px 70px rgb(0,0,0,0.5); 
+}
+
+section  .container  .contactinformation  .abc li:hover a i   
+{
+
+        opacity: 0.5;
+
+} 
+    
+section  .container .contactForm
+    
+{
+     position: absolute;
+    padding: 6%;
+    background: #fff;
+    margin-left: 10%;
+    padding-left: 24%;
+    width: auto;
+    height: 100%;
+    box-shadow: 0 50px 50px rgb(0,0,0,0.5);
+
+
+
+}
+section  .container .contactForm h2 
+{
+
+        color:#0f3959;
+        font-size: 24px;
+        font-weight: 500;
+
+}
+section .container .contactForm .formBox 
+{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+
+}
+    section .container .contactForm .formBox .inputBox
+    {
+        position: relative;
+        margin: 0 0 35px 0;
+
+    }
+section .container .contactForm .formBox .inputBox
+    {
+
+        width: 100%;
+
+    }
+
+
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea
+{
+
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline : none;
+
+}
+
+section .container .contactForm .formBox .inputBox textarea
+{
+
+    min-height : 120px;
+    max-width: 600px;
+
+}
+section .container .contactForm .formBox .inputBox span 
+{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+section .container .contactForm .formBox .inputBox textarea span
+
+{
+
+
+    position: fixed;
+    left: 0;
+    padding: 10px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+
+
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span ,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~ span
+{
+            transform: translateY(-20px) ;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px; 
+            color:orangered;
+            
+
+}
+.submit{
+			
+   
+    
+    background-color: #4CAF50; 
+      border: none;
+      
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      width:30%;
+      position: fixed;
+      cursor: pointer;
+      background: orangered;
+      color: #fff;
+      border: none;
+      max-width: 150px;
+      padding: 12px;	
+
+
+}
+
+.submit  :hover
+{
+
+  color:black;  
+}
+
+@media only screen and (min-width: 360px)
+{
+    section  .container  .contactinformation
+    {
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    section .container .contactForm
+    {
+        width: 100%;
+        position: relative;
+        right: 10%;
+        padding-top: 100px;
+    }
+    section .container .contactForm .submit
+    {
+        position: relative;
+        padding-top: 10px;
+        width: 200px;
+    }
+    section .container .contactForm .inputBox
+    {
+        margin-left: 50px;
+        position: relative;
+        right: 9%;
+
+    }
+    
+}
+
+@media only screen and (min-width: 320px)
+{
+    section  .container  .contactinformation
+    {
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    section .container .contactForm
+    {
+        width: 100%;
+        position: relative;
+        right: 10%;
+        padding-top: 100px;
+    }
+    section .container .contactForm .submit
+    {
+        position: relative;
+        padding-top: 10px;
+        width: 200px;
+    }
+    section .container .contactForm .inputBox
+    {
+        margin-left: 50px;
+        position: relative;
+        right: 9%;
+
+    }
+    
+}
+
+@media only screen and (min-width: 280px)
+{
+    section  .container  .contactinformation
+    {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        text-align:center ;
+    }
+
+    section  .container  .contactinformation  .abc li a i
+{
+     
+        opacity: 1; 
+        color: black;
+        font-size: 45px;
+        box-shadow: 0 70px 70px rgb(0,0,0,0.5); 
+}
+
+
+    section .container .contactForm
+    {
+        width: 100%;
+        position: relative;
+        right: 10%;
+        padding-top: 100px;
+    }
+    section .container .contactForm .submit
+    {
+        position: relative;
+        padding-top: 10px;
+        width: 200px;
+    }
+    section .container .contactForm .inputBox
+    {
+        margin-left: 50px;
+        position: relative;
+        right: 9%;
+
+    }
+    
+}
+
+@media only screen and (min-width: 768px)
+{
+    
+
+    section .container .contactForm
+    {
+        width: 100%;
+        position: relative;
+        right: 10%;
+        padding-top: 100px;
+    }
+    
+    section .container .contactForm .submit
+    {
+        position: relative;
+        padding-top: 10px;
+        width: 200px;
+    }
+    section .container .contactForm .inputBox
+    {
+        margin-left: 50px;
+        position: relative;
+        right: 9%;
+
+    }
+
+    section .container .contactinformation {
+    position: relative;
+    top: 9%;
+    left: 5%;
+    width: 350px;
+   
+    background: orangered;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0 , 0 , 0.2);
+}
+
+}
+
+ @media only screen and (min-width: 1200px) {
+
+section .container .contactForm {
+   position: absolute;
+    padding: 70px 50px;
+        right: 27%;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgb(0,0,0,0.5);
+}
+
+section .container .contactinformation {
+    position: relative;
+    top: 9%;
+    left: 35%;
+    width: 350px;
+    /* height: calc(100% - 80px); */
+    background: orangered;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0 , 0 , 0.2);
+}
+
+}
