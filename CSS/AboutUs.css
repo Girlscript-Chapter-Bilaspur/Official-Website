@@ -50,7 +50,7 @@ h3{
 
 
 
- p{ 
+ .AboutUs p{ 
 
    color:#FFF;
    width: 100%;
@@ -66,7 +66,7 @@ h3{
 
   @media screen 
   {
-  	p{
+  	.AboutUs p{
   		padding-right:3.0rem;
   		padding-left: 3.0rem;
   	}
